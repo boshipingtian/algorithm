@@ -1,7 +1,6 @@
-package io.archie.algorithm;
+package io.archie.algorithm.nowcoder;
 
 import java.util.*;
-import java.util.concurrent.ArrayBlockingQueue;
 
 //HJ33 整数与IP地址间的转换
 //      10.0.3.193
