@@ -1,8 +1,6 @@
-package io.archie.algorithm;
+package io.archie.algorithm.nowcoder;
 
-import java.util.Arrays;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
 // HJ58 输入n个整数，输出其中最小的k个
 public class Code4 {

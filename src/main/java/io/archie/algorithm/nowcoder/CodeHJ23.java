@@ -1,8 +1,7 @@
-package io.archie.algorithm;
+package io.archie.algorithm.nowcoder;
 
 import java.util.HashMap;
 import java.util.*;
-import java.util.Set;
 
 public class CodeHJ23 {
     public static void main(String[] args) {
