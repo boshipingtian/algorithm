@@ -1,4 +1,4 @@
-package io.archie.algorithm;
+package io.archie.algorithm.huawei.meet;
 
 import java.util.Stack;
 

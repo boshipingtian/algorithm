@@ -6,7 +6,7 @@ package io.archie.algorithm.huawei.meet;
 * @Author: MrArchie
 * @Date: 2024/10/13 18:18
 */
-public class Main {
+public class LeetCode209 {
 
     public static void main(String[] args) {
         int target = 11;
