@@ -26,5 +26,6 @@ public class ListNode {
             System.out.print(temp.val + " ");
             temp = temp.next;
         }
+        System.out.println();
     }
 }
