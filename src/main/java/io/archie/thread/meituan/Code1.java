@@ -28,6 +28,7 @@ public class Code1 {
         } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
         }
+        executorService.shutdown();
     }
 
     public static class AService {
