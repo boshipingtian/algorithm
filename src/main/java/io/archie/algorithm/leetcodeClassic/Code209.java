@@ -10,7 +10,16 @@ package io.archie.algorithm.leetcodeClassic;
  */
 public class Code209 {
 
-    public static int minSubArrayLen(int target, int[] nums) {
+    public static void main(String[] args) {
+        Code209 code209 = new Code209();
+
+        int[] nums1 = {1,1,1,1,1,1,1,1};
+        int target1 = 11;
+        int ans1 = code209.minSubArrayLen2(target1, nums1);
+        System.out.println("ans1 = " + ans1);
+    }
+
+    public static int minSubArrayLen1(int target, int[] nums) {
         int left = 0, right = 0;
         int n = nums.length;
         int minLength = 0;
@@ -18,10 +27,10 @@ public class Code209 {
         while (right < n) {
             tempValue += nums[right];
             while (tempValue >= target) {
-                if(minLength == 0){
-                    minLength = right - left +1;
-                }else {
-                    minLength = Math.min(minLength, right - left+1);
+                if (minLength == 0) {
+                    minLength = right - left + 1;
+                } else {
+                    minLength = Math.min(minLength, right - left + 1);
                 }
                 tempValue -= nums[left];
                 left++;
@@ -29,5 +38,26 @@ public class Code209 {
             right++;
         }
         return minLength;
+    }
+
+    public int minSubArrayLen2(int target, int[] nums) {
+        int left = 0;
+        int right = 0;
+        int n = nums.length;
+        int min = 0;
+        int temp = 0;
+        for (right = 0; right < n; right++) {
+            temp = temp + nums[right];
+            while (left <= right && temp >= target) {
+                if (min == 0) {
+                    min = right - left + 1;
+                } else {
+                    min = Math.min(min, (right - left + 1));
+                }
+                temp = temp - nums[left];
+                left++;
+            }
+        }
+        return min;
     }
 }
