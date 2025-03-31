@@ -14,17 +14,17 @@ public class Code82 {
         // 1,2,3,3,4,4,5
         ListNode head1 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(3, new ListNode(4, new ListNode(4, new ListNode(5)))))));
         head1.print();
-        ListNode answer1 = code82.deleteDuplicates(head1);
+        ListNode answer1 = code82.deleteDuplicatesSelf(head1);
         answer1.print();
         // 1,1,1,2,3
         ListNode head2 = new ListNode(1, new ListNode(1, new ListNode(1, new ListNode(2, new ListNode(3)))));
         head2.print();
-        ListNode answer2 = code82.deleteDuplicates(head2);
+        ListNode answer2 = code82.deleteDuplicatesSelf(head2);
         answer2.print();
         // 1,1
         ListNode head3 = new ListNode(1, new ListNode(1));
         head3.print();
-        ListNode answer3 = code82.deleteDuplicates(head3);
+        ListNode answer3 = code82.deleteDuplicatesSelf(head3);
         try {
             answer3.print();
         } catch (Exception e) {
@@ -76,9 +76,13 @@ public class Code82 {
                     right = right.next;
                 }
                 leftPrev.next = right;
+                left = right;
+                if(right != null){
+                    right = right.next;
+                }
             }
         }
-        return head;
+        return dummyNode.next;
     }
 
     public ListNode deleteDuplicates(ListNode head) {
