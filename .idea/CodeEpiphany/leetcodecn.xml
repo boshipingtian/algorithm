@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="com.wenjun.codeepiphany.leetcodecn.settings">
+    <option name="languageSettings">
+      <list>
+        <LanguageSettingsState sourceFolder="$PROJECT_DIR$/src/main/java/io/archie/algorithm/leetcode" language="java" languageVersion="" fileNameTemplate="${velocity.camelCaseName(${challenge.slug})}" codeTemplate="package leetcodecn;&#10;&#10;class $velocity.camelCaseName($challenge.slug) {&#10;&#10;    $challenge.code&#10;&#10;public static void main(String[] args) {&#10;    // add your test code&#10;}&#10;}" />
+      </list>
+    </option>
+    <option name="queryCriteria">
+      <map>
+        <entry key="LeetCodeChallengesView-lastUI" value="QueryParameters" />
+        <entry key="LeetCodeParametersQueryPresenter-criteria" value="{&quot;selectedCategory&quot;:null,&quot;selectedFavorite&quot;:{&quot;id&quot;:&quot;ZdJfCLlK&quot;,&quot;name&quot;:&quot;字符串练习&quot;,&quot;type&quot;:&quot;leetcode_favorites&quot;},&quot;selectedDifficulty&quot;:null,&quot;selectedStatus&quot;:null,&quot;tags&quot;:[],&quot;orderBy&quot;:null}" />
+        <entry key="LeetCodeParametersQueryPresenter-pageSize" value="100" />
+      </map>
+    </option>
+  </component>
+</project>

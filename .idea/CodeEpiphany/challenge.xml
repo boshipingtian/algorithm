@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="com.wenjun.codeepiphany.challenge.settings">
+    <option name="challenges">
+      <map>
+        <entry key="$PROJECT_DIR$/src/main/java/io/archie/algorithm/leetcode/CompareVersionNumbers.java">
+          <value>
+            <ChallengeSettingsStateItem>
+              <option name="challengeId" value="1965318300019855360" />
+              <option name="challengeLanguageId" value="1965318300024049664" />
+              <option name="defaultTestCases">
+                <TestCase>
+                  <option name="expectedOutput" value="-1" />
+                  <option name="input" value="&quot;1.2&quot;&#10;&quot;1.10&quot;" />
+                </TestCase>
+                <TestCase>
+                  <option name="expectedOutput" value="0" />
+                  <option name="input" value="&quot;1.01&quot;&#10;&quot;1.001&quot;" />
+                </TestCase>
+                <TestCase>
+                  <option name="expectedOutput" value="0" />
+                  <option name="input" value="&quot;1.0&quot;&#10;&quot;1.0.0.0&quot;" />
+                </TestCase>
+              </option>
+              <option name="dojo" value="leetcodecn" />
+              <option name="language" value="java" />
+              <option name="solutionId" value="1965318300028243968" />
+              <option name="testCases">
+                <TestCase>
+                  <option name="expectedOutput" value="-1" />
+                  <option name="input" value="&quot;1.2&quot;&#10;&quot;1.10&quot;" />
+                </TestCase>
+                <TestCase>
+                  <option name="expectedOutput" value="0" />
+                  <option name="input" value="&quot;1.01&quot;&#10;&quot;1.001&quot;" />
+                </TestCase>
+                <TestCase>
+                  <option name="expectedOutput" value="0" />
+                  <option name="input" value="&quot;1.0&quot;&#10;&quot;1.0.0.0&quot;" />
+                </TestCase>
+              </option>
+            </ChallengeSettingsStateItem>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/archie/algorithm/leetcode/LongestPalindromicSubstring.java">
+          <value>
+            <ChallengeSettingsStateItem>
+              <option name="challengeId" value="1965293238143291392" />
+              <option name="challengeLanguageId" value="1965293238235566080" />
+              <option name="defaultTestCases">
+                <TestCase>
+                  <option name="expectedOutput" value="&quot;bab&quot;" />
+                  <option name="input" value="&quot;babad&quot;" />
+                </TestCase>
+                <TestCase>
+                  <option name="expectedOutput" value="&quot;bb&quot;" />
+                  <option name="input" value="&quot;cbbd&quot;" />
+                </TestCase>
+              </option>
+              <option name="dojo" value="leetcodecn" />
+              <option name="language" value="java" />
+              <option name="solutionId" value="1965293238243954688" />
+              <option name="testCases">
+                <TestCase>
+                  <option name="expectedOutput" value="&quot;bab&quot;" />
+                  <option name="input" value="&quot;babad&quot;" />
+                </TestCase>
+                <TestCase>
+                  <option name="expectedOutput" value="&quot;bb&quot;" />
+                  <option name="input" value="&quot;cbbd&quot;" />
+                </TestCase>
+              </option>
+            </ChallengeSettingsStateItem>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/archie/algorithm/leetcode/TextJustification.java">
+          <value>
+            <ChallengeSettingsStateItem>
+              <option name="challengeId" value="1965309125499949056" />
+              <option name="challengeLanguageId" value="1965309125512531968" />
+              <option name="defaultTestCases">
+                <TestCase>
+                  <option name="expectedOutput" value="[ &quot;This is an&quot;, &quot;example of text&quot;, &quot;justification. &quot; ]" />
+                  <option name="input" value="[&quot;This&quot;, &quot;is&quot;, &quot;an&quot;, &quot;example&quot;, &quot;of&quot;, &quot;text&quot;, &quot;justification.&quot;]&#10;16" />
+                </TestCase>
+                <TestCase>
+                  <option name="expectedOutput" value="[ &quot;What must be&quot;, &quot;acknowledgment &quot;, &quot;shall be &quot; ]" />
+                  <option name="input" value="[&quot;What&quot;,&quot;must&quot;,&quot;be&quot;,&quot;acknowledgment&quot;,&quot;shall&quot;,&quot;be&quot;]&#10;16" />
+                </TestCase>
+                <TestCase>
+                  <option name="expectedOutput" value="[ &quot;Science is what we&quot;, &quot;understand well&quot;, &quot;enough to explain to&quot;, &quot;a computer. Art is&quot;, &quot;everything else we&quot;, &quot;do &quot; ]" />
+                  <option name="input" value="[&quot;Science&quot;,&quot;is&quot;,&quot;what&quot;,&quot;we&quot;,&quot;understand&quot;,&quot;well&quot;,&quot;enough&quot;,&quot;to&quot;,&quot;explain&quot;,&quot;to&quot;,&quot;a&quot;,&quot;computer.&quot;,&quot;Art&quot;,&quot;is&quot;,&quot;everything&quot;,&quot;else&quot;,&quot;we&quot;,&quot;do&quot;]&#10;20" />
+                </TestCase>
+              </option>
+              <option name="dojo" value="leetcodecn" />
+              <option name="language" value="java" />
+              <option name="solutionId" value="1965309125520920576" />
+              <option name="testCases">
+                <TestCase>
+                  <option name="expectedOutput" value="[ &quot;This is an&quot;, &quot;example of text&quot;, &quot;justification. &quot; ]" />
+                  <option name="input" value="[&quot;This&quot;, &quot;is&quot;, &quot;an&quot;, &quot;example&quot;, &quot;of&quot;, &quot;text&quot;, &quot;justification.&quot;]&#10;16" />
+                </TestCase>
+                <TestCase>
+                  <option name="expectedOutput" value="[ &quot;What must be&quot;, &quot;acknowledgment &quot;, &quot;shall be &quot; ]" />
+                  <option name="input" value="[&quot;What&quot;,&quot;must&quot;,&quot;be&quot;,&quot;acknowledgment&quot;,&quot;shall&quot;,&quot;be&quot;]&#10;16" />
+                </TestCase>
+                <TestCase>
+                  <option name="expectedOutput" value="[ &quot;Science is what we&quot;, &quot;understand well&quot;, &quot;enough to explain to&quot;, &quot;a computer. Art is&quot;, &quot;everything else we&quot;, &quot;do &quot; ]" />
+                  <option name="input" value="[&quot;Science&quot;,&quot;is&quot;,&quot;what&quot;,&quot;we&quot;,&quot;understand&quot;,&quot;well&quot;,&quot;enough&quot;,&quot;to&quot;,&quot;explain&quot;,&quot;to&quot;,&quot;a&quot;,&quot;computer.&quot;,&quot;Art&quot;,&quot;is&quot;,&quot;everything&quot;,&quot;else&quot;,&quot;we&quot;,&quot;do&quot;]&#10;20" />
+                </TestCase>
+              </option>
+            </ChallengeSettingsStateItem>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
