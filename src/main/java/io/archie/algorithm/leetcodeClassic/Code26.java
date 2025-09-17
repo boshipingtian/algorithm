@@ -1,5 +1,6 @@
 package io.archie.algorithm.leetcodeClassic;
 
+import io.archie.algorithm.helper.SortHelper;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -37,7 +38,7 @@ public class Code26 {
                 } catch (Exception e) {
                     return l;
                 }
-                swap(nums, l, r);
+                SortHelper.swap(l, r, nums);
                 sets.add(nums[l]);
             } else {
                 sets.add(lv);
@@ -46,12 +47,6 @@ public class Code26 {
             r++;
         }
         return l;
-    }
-
-    public static void swap(int[] nums, int l, int r) {
-        int temp = nums[r];
-        nums[r] = nums[l];
-        nums[l] = temp;
     }
 
     public static int removeDuplicates1_2(int[] nums) {
@@ -66,20 +61,20 @@ public class Code26 {
         return slow;
     }
 
-//    输入：nums = [0,0,1,1,1,1,2,3,3]
+    //    输入：nums = [0,0,1,1,1,1,2,3,3]
 //    输出：7, nums = [0,0,1,1,2,3,3]
     public static int removeDuplicates2_1(int[] nums) {
         int n = nums.length;
-        if(n <= 2){
+        if (n <= 2) {
             return n;
         }
         int slow = 2, fast = 2;
 
-        while(fast < nums.length){
-            if(nums[slow -2] != nums[fast]){
+        while (fast < nums.length) {
+            if (nums[slow - 2] != nums[fast]) {
                 nums[slow] = nums[fast];
                 slow++;
-            } 
+            }
             fast++;
         }
         return slow;
