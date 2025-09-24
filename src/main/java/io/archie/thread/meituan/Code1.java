@@ -1,6 +1,7 @@
 package io.archie.thread.meituan;
 
 import java.util.concurrent.*;
+import java.util.logging.Logger;
 
 /**
  * 有返回结果的多线程之间互相调度
@@ -14,6 +15,8 @@ import java.util.concurrent.*;
  */
 public class Code1 {
 
+    public static final Logger log = Logger.getLogger(Code1.class.getName());
+
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         ThreadPoolExecutor executorService = new ThreadPoolExecutor(3, 3, 0, TimeUnit.SECONDS, new LinkedBlockingDeque<>());
         CompletableFuture<Integer> taskA = CompletableFuture.supplyAsync(AService::get, executorService);
@@ -26,7 +29,7 @@ public class Code1 {
             int finalResult = combinedFuture.get();
             System.out.println(finalResult * 100);
         } catch (InterruptedException | ExecutionException e) {
-            e.printStackTrace();
+            log.info(e.getMessage());
         }
         executorService.shutdown();
     }
